@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Example 13: Positioning</title>
+  <style>
+    .gradient {
+      background-image: url("images/gradient.jpg");
+      background-repeat: repeat-x;
+    }
+
+    .felt {
+      width: 300px;
+      height: 300px;
+      background-image: url("images/felt.jpg");
+      position: relative;
+      left: 300px;
+      top: 200px;
+    }
+
+    .ten {
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      z-index: 5;
+    }
+
+    .jack {
+      position: absolute;
+      top: 90px;
+      left: 105px;
+      z-index: 4;
+    }
+
+    .queen {
+      position: absolute;
+      top: 80px;
+      left: 110px;
+      z-index: 3;
+    }
+
+    .king {
+      position: absolute;
+      top: 70px;
+      left: 115px;
+      z-index: 2;
+    }
+
+    .backCard {
+      position: absolute;
+      top: 60px;
+      left: 120px;
+      z-index: 1;
+      width: 64px;
+      height: 100px;
+    }
+  </style>
+</head>
+<body class="gradient">
+  <div class="felt">
+    <img src="images/tendiamonds.png" alt="Ten of diamonds playing card." class="ten">
+    <img src="images/jackclubs.png" alt="Jack of clubs playing card." class="jack">
+    <img src="images/queenhearts.png" alt="Queen of hearts playing card." class="queen">
+    <img src="images/kingspades.png" alt="King of spades playing card." class="king">
+    <img src="images/card.png" alt="Back of a playing card." class="backCard">
+  </div>
+</body>
+</html>
