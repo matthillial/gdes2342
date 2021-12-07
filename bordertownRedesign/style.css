@@ -1,0 +1,503 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0;
+  height: 100%;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  position: relative;
+}
+
+.right {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.rightGrad {
+  background: linear-gradient(-90deg, #B89452 1.04%, #DBC497 38.02%, #DBC497 66.67%, rgba(219, 196, 151, 0) 100%);
+  height: 100vh;
+  width: 25%;
+  position: fixed;
+  right: 0px;
+  top: 0;
+}
+
+h1 {
+  color: white;
+  font-size: 36px;
+}
+
+h2 {
+  font-family: Volkhov, serif;
+  color: white;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  color: white;
+  font-weight: normal;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+b {
+  font-weight: bold;
+}
+
+
+    /* ---- Sidebar ---- */
+
+
+#sidebar {
+  background: linear-gradient(90deg, #B89452 1.04%, #DBC497 38.02%, #DBC497 66.67%, rgba(219, 196, 151, 0) 100%);
+  margin: 0;
+  position: fixed;
+  z-index: 500;
+  height: 100vh;
+  width: 25%;
+  transition-duration: 1s;
+}
+
+#sidebar:hover {
+  background-color: #B89452;
+  transition-duration: 1s;
+}
+
+#logoFlag {
+  width: 90%;
+  height: 20%;
+  background: #651B15;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  border-radius: 0px 0px 20px 20px;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+  transition-duration: 0.8s;
+}
+
+#logoFlag:hover {
+  height: 150px;
+  transition-duration: 0.8s;
+}
+
+#logo {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+#nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40%;
+  width: 100%;
+
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.navButton {
+  background: #654315;
+  border-radius: 0px 10px 10px 0px;
+  width: 50%;
+  height: 14%;
+  height: 7vh;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
+  transition-duration: 0.8s;
+}
+
+.navButton:hover {
+  width: 58%;
+  transition-duration: 0.8s;
+}
+
+.navButton h2 {
+  text-align: right;
+  margin-right: 10px;
+  align-items: center;
+}
+
+#hours {
+  background: #C4C4C4;
+  border-radius: 0px 20px 20px 0px;
+  width: 70%;
+  height: 100px;
+  top: calc(100% - 132px);
+  position: absolute;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+
+  transition-duration: 0.8s;
+}
+
+#hours:hover {
+  width: 80%;
+  transition-duration: 0.8s;
+}
+
+#hours h2 {
+  margin: 5px;
+}
+
+
+    /* ---- Homepage ---- */
+
+
+#home {
+  background-image: url("img/home.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+/* Main column */
+
+.main h3 {
+  margin: 15px;
+  margin-top: 20px;
+}
+
+/* Right column */
+
+.flag {
+  background: #C4C4C4;
+  border-radius: 10px 0px 0px 10px;
+  position: relative;
+  display: block;
+  width: auto;
+  height: 1.5em;
+  right: 0;
+  text-align: right;
+  white-space: nowrap;
+  padding: 10px 20px 10px 20px;
+}
+
+#mapTab {
+  background: #651B15;
+  border-radius: 25px 25px 0px 0px;
+  height: 50%;
+  width: 90%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  padding: 0;
+}
+
+#mapTab h3 {
+  margin: 10px;
+}
+
+#mapTab img {
+  width: 90%;
+  height: 80%;
+  position: relative;
+  bottom: 0;
+  margin: 0;
+  object-fit: cover;
+  padding: 0;
+}
+
+
+    /* ---- FAQ ---- */
+
+
+/* Main Section */
+
+#faq {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(219, 196, 151, .5);
+}
+
+#mainFaq {
+  justify-content: center;
+  text-align: center;
+}
+
+#faqFlag {
+  background: #363636;
+  background: #654315;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 0 0 20px 20px;
+  left: 5%;
+  top: 0;
+}
+
+#faqColumn {
+  position: relative;
+  top: 15vh;
+}
+
+/* Growing Faq Divs */
+
+.grow {
+  background-image: url("img/texture1.jpg");
+  background-size: cover;
+  padding: 5px 5px 5px 5px;
+  border-radius: 10px;
+  width: 90%;
+  margin: 20px auto;
+  max-height: 50px;
+  transition: max-height 0.5s;
+  -webkit-transition: max-height 0.5s;
+  text-align: center;
+  overflow: hidden;
+}
+
+.grow:hover {
+  max-height: 300px;
+  transition: max-height 0.5s;
+  -webkit-transition: max-height 0.5s;
+}
+
+.grow h2 {
+  margin: 10px;
+}
+
+.grow p {
+  padding: 0px 20px;
+}
+
+/* Right Column */
+
+#rightFaq {
+  background-image: url("img/image1.jpg");
+}
+
+
+    /* ---- Library ---- */
+
+
+/* Main Section */
+
+#libraryBackground {
+  z-index: 0;
+  position: fixed;
+  left: 200px;
+  height: 100vh;
+  width: 75vw;
+  object-fit: cover;
+  object-position: top;
+}
+
+#libraryFlag {
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  width: 50vw;
+  height: 30vh;
+  background: #363636;
+  background: #654315;
+  border-radius: 40px 40px 0 0;
+  text-align: center;
+}
+
+/* Right Column */
+
+#libraryQs {
+  position: fixed;
+  right: 0px;
+  top: 0;
+  width: 25%;
+  height: 100vh;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.growFlag {
+  margin: 20px 0;
+  width: 100%;
+
+  max-height: 80px;
+  overflow: hidden;
+  transition: max-height 0.5s, width 0.2s 0.5s;
+  -webkit-transition: max-height 0.5s, width 0.2s 0.5s;
+}
+
+.growFlag:hover {
+  width: 120%;
+  max-height: 300px;
+  transition: max-height 0.5s 0.2s, width 0.2s;
+  -webkit-transition: max-height 0.5s 0.2s, width 0.2s;
+}
+
+.flagHeader {
+  height: 80px;
+  background: #651B15;
+
+  border-radius: 10px 0px 0px 10px;
+  width: 80%;
+  float: right;
+}
+
+.flagHeader h3 {
+  width: 20vw;
+  margin: 20px auto;
+}
+
+.flagExpand {
+  background: #C4C4C4;
+  border-radius: 0px 0px 0px 10px;
+  width: 70%;
+  float: right;
+}
+
+
+    /* ---- About ---- */
+
+
+/* Main Section */
+.slideshow {
+  width: 300px;
+  height: 200px;
+}
+
+.slideshow img {
+  width: 300px;
+  height: 200px;
+}
+
+#photoHeader {
+  position: fixed;
+  top: 0;
+  width: 50%;
+  height: 40vh;
+  z-index: 100;
+  text-align: center;
+  background: linear-gradient(rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0));
+  padding: 0px;
+}
+
+#photoHeadFlag {
+  position: absolute;
+  background: #654315;
+  border-radius: 0 0 20px 20px;
+  height: 30vh;
+  width: 100%;
+  margin: 0;
+}
+
+.slidingText {
+  position: absolute;
+  width: 100%;
+}
+
+.slidingText h2, .slidingText p {
+  margin: 20px;
+  margin-top: 5px;
+}
+
+#photoContainer {
+  position: relative;
+  top: 35vh;
+  z-index: 10;
+}
+
+.scrollImg {
+  width: 100%;
+  margin: 0;
+  height: 60vh;
+  object-fit: cover;
+}
+
+#photoGrad {
+  background: linear-gradient(0deg, #DBC497 38.02%, #DBC497 66.67%, rgba(219, 196, 151, 0) 100%);
+  position: fixed;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 75vh;
+}
+
+/* Right Column */
+
+#bordertownName {
+  position: fixed;
+  top: 5vh;
+  right: 0;
+  width: 23%;
+  height: 60vh;
+  background-color: #C4C4C4;
+  border-radius: 20px 0 0 20px;
+  text-align: center;
+}
+
+#bordertownName p {
+  margin: 20px;
+}
+
+#contact {
+  position: fixed;
+  bottom: 0;
+  width: 25%;
+}
+
+#contactFlag {
+  width: 60%;
+  background-color: #651B15;
+  border-radius: 10px 10px 0 0;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  bottom: -20px;
+  height: 16vh;
+}
+
+#contactFlag h2 {
+  padding-top: 15px;
+}
